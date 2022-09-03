@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/trikhal-udyog/static/css/main.073c9b0a.css",
+    "main.js": "/trikhal-udyog/static/js/main.1cd73734.js",
+    "index.html": "/trikhal-udyog/index.html",
+    "main.073c9b0a.css.map": "/trikhal-udyog/static/css/main.073c9b0a.css.map",
+    "main.1cd73734.js.map": "/trikhal-udyog/static/js/main.1cd73734.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.1cd73734.js"
+  ]
+}
