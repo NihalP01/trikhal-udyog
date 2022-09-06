@@ -1,9 +1,6 @@
 import { Box, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
-import { aboutData } from '../../data/aboutData';
-
-import { Cards } from '../cards/Cards';
 
 const useStyles = makeStyles({
   headingText: {

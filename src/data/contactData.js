@@ -2,7 +2,7 @@ export const contactData = [
     {
       icon: 'fa fa-location-arrow',
       header: 'Our Address',
-      content:'Coporate office: \nDhiru Bbhai Bhawan\nNerala, Delhi - 100034',
+      content:'Corporate office: \nDhiru Bhai Bhawan\nNerala, Delhi - 100034',
       content2:'Marketing office: Lovekush, Tetultala, Gaira, West Bengal',
       content3: 'Work: 1-AIDC PArk, Nalbari, Assam',
     },
