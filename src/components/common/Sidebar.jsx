@@ -106,7 +106,6 @@ const Sidebar = () => {
             <img
               className={classes.logo}
               src={`${process.env.PUBLIC_URL}/assets/logos/logo.jpg`}
-              
               alt="trikhal logo"
             />
           </Link>
@@ -150,11 +149,14 @@ const Sidebar = () => {
                 onClick={handleToggle}
                 style={{ textDecoration: 'none' }}
               >
-                <Box className={classes.navbarStyle} p={2}>
+                <Box
+                  className={classes.navbarStyle}
+                  p={2}
+                  onClick={() => scrollToElement(header.link)}
+                >
                   <Typography
                     className={classes.typography}
                     component={'span'}
-                    onClick={() => scrollToElement(header.link)}
                   >
                     {header.title}
                   </Typography>
