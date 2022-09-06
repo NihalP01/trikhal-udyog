@@ -26,16 +26,23 @@ const useStyles = makeStyles({
       fontSize: '1.2rem !important',
     },
     ['@media (max-width: 600px)']: {
-      fontSize: '1rem !important',
+      fontSize: '0.9rem !important',
+    },
+    ['@media (max-width: 480px)']: {
+      fontSize: '1.25rem !important',
     },
   },
   typoBody: {
-    fontSize: '1.2rem !important',
+    fontSize: '1.3rem !important',
     ['@media (max-width: 800px)']: {
       fontSize: '0.9rem !important',
     },
     ['@media (max-width: 600px)']: {
       fontSize: '0.7rem !important',
+    },
+    ['@media (max-width: 480px)']: {
+      padding: '1rem',
+      fontSize: '0.9rem !important',
     },
   },
 });

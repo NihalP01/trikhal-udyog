@@ -67,6 +67,18 @@ const Sidebar = () => {
   const classes = useStyles();
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToElement = (sectionId) => {
+    const htmlEle = document.getElementById(`${sectionId}`);
+
+    if (htmlEle) {
+      window.scrollTo({
+        top:
+          htmlEle.offsetTop -
+          (window.pageYOffset <= htmlEle.offsetTop ? 100 : 120),
+      });
+    }
+  };
+
   const toggleDrawer = (open) => (e) => {
     if (
       e.type === 'keydown' &&
@@ -142,6 +154,7 @@ const Sidebar = () => {
                   <Typography
                     className={classes.typography}
                     component={'span'}
+                    onClick={() => scrollToElement(header.link)}
                   >
                     {header.title}
                   </Typography>

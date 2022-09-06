@@ -9,21 +9,27 @@ const useClasses = makeStyles((theme) => ({
     fontSize: '1.8rem !important',
     fontWeight: '600',
     color: '#1f755c',
-    marginBottom: '0.8rem !important',
+    marginBottom: '1.5rem !important',
     ['@media (max-width: 800px)']: {
       fontSize: '1.2rem !important',
     },
     ['@media (max-width: 600px)']: {
       fontSize: '0.9rem !important',
     },
+    ['@media (max-width: 480px)']: {
+      fontSize: '1.25rem !important',
+    },
   },
   typoBody: {
-    fontSize: '1.2rem !important',
+    fontSize: '1.3rem !important',
     ['@media (max-width: 800px)']: {
       fontSize: '0.9rem !important',
     },
     ['@media (max-width: 600px)']: {
       fontSize: '0.7rem !important',
+    },
+    ['@media (max-width: 480px)']: {
+      fontSize: '0.9rem !important',
     },
   },
 }));

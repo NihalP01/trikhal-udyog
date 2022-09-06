@@ -23,6 +23,10 @@ const useStyles = makeStyles({
       height: '1.6rem',
       fontSize: '0.7rem !important',
     },
+    ['@media (max-width: 480px)']: {
+      height: '2.5rem',
+      fontSize: '0.9rem !important',
+    },
   },
   sectionHeader: {
     fontSize: '2.4rem !important',
@@ -35,7 +39,7 @@ const useStyles = makeStyles({
       fontSize: '1.2rem !important',
     },
     ['@media (max-width: 480px)']: {
-      fontSize: '1rem !important',
+      fontSize: '1.8rem !important',
     },
   },
   sectionBody: {
@@ -47,7 +51,7 @@ const useStyles = makeStyles({
       fontSize: '0.7rem !important',
     },
     ['@media (max-width: 480px)']: {
-      fontSize: '0.6rem !important',
+      fontSize: '0.9rem !important',
     },
   },
   imgBack: {
@@ -59,6 +63,17 @@ const useStyles = makeStyles({
     marginTop: '6rem',
     ['@media (max-width: 800px)']: {
       marginTop: '5rem !important',
+    },
+  },
+  textBox: {
+    ['@media (max-width: 480px)']: {
+      padding: '4rem',
+    },
+  },
+  imgMobile: {
+    ['@media (max-width: 480px)']: {
+      filter: `blur(8px)`,
+      webkitFilter: `blur(8px)`,
     },
   },
 });
@@ -79,6 +94,17 @@ const HeroSection = () => {
 
   return (
     <Box className={classes.root} id="home" sx={{ flexGrow: 1 }}>
+      <img
+        className={classes.imgMobile}
+        src={`${process.env.PUBLIC_URL}/assets/images/home.png`}
+        height="320px"
+        style={{
+          left: '0',
+          right: '0',
+          zIndex: '-5',
+          position: 'absolute',
+        }}
+      />
       <Grid container>
         <Grid item xs={6} className={classes.imgBack}>
           <img
@@ -91,7 +117,7 @@ const HeroSection = () => {
         </Grid>
 
         <Grid item xs>
-          <Box mt={6}>
+          <Box mt={6} className={classes.textBox}>
             <Typography className={classes.sectionHeader}>
               Welcome to Trikhal Udyogs Pvt. Ltd.
             </Typography>

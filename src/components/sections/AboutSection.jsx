@@ -14,6 +14,9 @@ const useStyles = makeStyles({
     ['@media (max-width: 600px)']: {
       fontSize: '0.9rem !important',
     },
+    ['@media (max-width: 480px)']: {
+      fontSize: '1.25rem !important',
+    },
   },
   aboutBox: {
     padding: '4rem',
@@ -28,6 +31,14 @@ const useStyles = makeStyles({
     },
     ['@media (max-width: 600px)']: {
       fontSize: '0.7rem !important',
+    },
+    ['@media (max-width: 480px)']: {
+      fontSize: '0.9rem !important',
+    },
+  },
+  aboutImage: {
+    ['@media (max-width: 480px)']: {
+      display: 'none',
     },
   },
 });
@@ -59,7 +70,7 @@ const AboutSection = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={6}>
+          <Grid item xs={6} className={classes.aboutImage}>
             <img
               width="100%"
               maxWidth={'47.5rem'}

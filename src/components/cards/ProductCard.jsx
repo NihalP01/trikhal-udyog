@@ -33,7 +33,22 @@ const useStyles = makeStyles({
     ['@media (max-width: 600px)']: {
       fontSize: '0.7rem !important',
     },
+    ['@media (max-width: 480px)']: {
+      fontSize: '1rem !important',
+    },
   },
+  cardDesc: {
+    fontSize: '1.05rem !important',
+    ['@media (max-width: 800px)']: {
+      fontSize: '1.1rem !important',
+    },
+    ['@media (max-width: 600px)']: {
+      fontSize: '0.7rem !important',
+    },
+    ['@media (max-width: 480px)']: {
+      fontSize: '0.85rem !important',
+    },
+  }
 });
 const ProductCard = ({ props }) => {
   const classes = useStyles();
@@ -55,7 +70,7 @@ const ProductCard = ({ props }) => {
         >
           {props.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography component={'div'} className={classes.cardDesc}>
           {props.desc}
         </Typography>
       </CardContent>
