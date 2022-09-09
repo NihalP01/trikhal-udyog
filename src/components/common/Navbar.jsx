@@ -53,8 +53,8 @@ const NavBar = () => {
   return (
     <AppBar
       className={classes.header_main}
-      position="fixed"
-      style={{ background: 'white' }}
+      position="fixed"    
+      color="transparent" sx={{backdropFilter:"blur(30px)"}}
     >
       <Toolbar>
         <img

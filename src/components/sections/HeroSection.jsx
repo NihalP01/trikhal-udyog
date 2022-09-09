@@ -71,7 +71,9 @@ const useStyles = makeStyles({
     },
   },
   imgMobile: {
+    display: 'none',
     ['@media (max-width: 480px)']: {
+      display: 'block',
       filter: `blur(8px)`,
       webkitFilter: `blur(8px)`,
     },

@@ -11,4 +11,10 @@ export const productsData = [
     desc: 'This is desciption of the product',
     img: `${process.env.PUBLIC_URL}/assets/images/leafPlate.jpg`,
   },
+  {
+    id: 2,
+    title: 'All assam tourism',
+    desc: 'This is desciption of the product',
+    img: `${process.env.PUBLIC_URL}/assets/images/more.jpg`,
+  },
 ];

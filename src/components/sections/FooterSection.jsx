@@ -23,12 +23,9 @@ const FooterSection = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} md={8}>
           <Typography variant="body2" color="primary">
-            {'© Copyright © '}
-            <Link color="inherit" to="/">
-              trikhal.com
-            </Link>{' '}
+            {'Copyright © '}
             {new Date().getFullYear()}
-            {'. All Rights Reserved'}
+            {' Trikhal Udyogs Pvt. Ltd. - All Rights Reserved.'}
           </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
