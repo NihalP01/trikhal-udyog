@@ -13,7 +13,7 @@ export const productsData = [
   },
   {
     id: 2,
-    title: 'All assam tourism',
+    title: 'More products are coming...',
     desc: 'This is desciption of the product',
     img: `${process.env.PUBLIC_URL}/assets/images/more.jpg`,
   },

@@ -3,6 +3,7 @@ import AboutSection from './AboutSection';
 import ProductsSection from './ProductsSection';
 import ContactUsSection from './ContactUsSection';
 import FooterSection from './FooterSection';
+import ServicesSection from './ServicesSection';
 
 export const Sections = {
   HeroSection,
@@ -10,4 +11,5 @@ export const Sections = {
   ProductsSection,
   ContactUsSection,
   FooterSection,
+  ServicesSection,
 };

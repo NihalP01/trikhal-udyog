@@ -15,8 +15,13 @@ export const headerData = [
     link: 'products',
   },
   {
-    id: 3,
-    title: 'Contact',
+    id: 2,
+    title: 'Services',
+    link: 'services',
+  },
+  {
+    id: 4,
+    title: 'Contact Us',
     link: 'contact',
   },
 ];
