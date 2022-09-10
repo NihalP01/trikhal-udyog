@@ -3,6 +3,8 @@ import { Cards } from '../cards/Cards';
 import { makeStyles } from '@mui/styles';
 import { Box, Grid, Typography } from '@mui/material';
 import { productsData } from '../../data/productsData';
+import { Link } from 'react-router-dom';
+
 
 const useClasses = makeStyles((theme) => ({
   headingText: {
@@ -37,6 +39,12 @@ const useClasses = makeStyles((theme) => ({
 const ProductsSection = () => {
   const classes = useClasses();
 
+  const handleClick = (id) => {
+    window.location.href = `/products/${id}`;
+  };
+
+
+
   return (
     <div id="products">
       <Typography className={classes.headingText}>
@@ -49,7 +57,7 @@ const ProductsSection = () => {
       <Box p={4}>
         <Grid container spacing={4} justifyContent="center">
           {productsData.map((product) => (
-            <Grid item key={product.id}>
+            <Grid item key={product.id} onClick={(e)=> handleClick(product.id)}>
               <Cards.ProductCard props={product} />
             </Grid>
           ))}

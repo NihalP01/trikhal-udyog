@@ -12,7 +12,6 @@ const useStyles = makeStyles({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: '10px',
-    width: '20rem',
     background: '#fff',
     boxShadow: '6px 8px 9px 1px rgb(0 0 0 / 10%) !important',
     transition: 'transform 0.25s ease-in-out !important',
@@ -48,7 +47,7 @@ const useStyles = makeStyles({
     ['@media (max-width: 480px)']: {
       fontSize: '0.85rem !important',
     },
-  }
+  },
 });
 const ProductCard = ({ props }) => {
   const classes = useStyles();
@@ -58,7 +57,8 @@ const ProductCard = ({ props }) => {
       <CardMedia
         style={{ padding: '4px' }}
         component="img"
-        height="160"
+        width='100%'
+        height={160}
         image={props.img}
         alt="img products"
       />
