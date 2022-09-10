@@ -11,6 +11,7 @@ const Landing = () => {
       <Sections.HeroSection />
       <Sections.AboutSection />
       <Sections.ProductsSection />
+      <Sections.ServicesSection />
       <Sections.ContactUsSection />
       <Sections.FooterSection />
     </div>

@@ -4,7 +4,7 @@ export const contactData = [
       header: 'Our Address',
       content:'Corporate office: \nDhiru Bhai Bhawan\nNerala, Delhi - 100034',
       content2:'Marketing office: Lovekush, Tetultala, Gaira, West Bengal',
-      content3: 'Work: 1-AIDC PArk, Nalbari, Assam',
+      content3: 'Work: 1-AIDC Park, Nalbari, Assam',
     },
     {
       icon: 'fa fa-envelope',

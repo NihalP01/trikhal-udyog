@@ -86,7 +86,7 @@ const NavBar = () => {
               </Grid>
             );
           })}
-          <Grid item>
+          {/* <Grid item>
             <Button
               variant="contained"
               style={{ textTransform: 'none' }}
@@ -94,7 +94,7 @@ const NavBar = () => {
             >
               Sign up
             </Button>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Toolbar>
     </AppBar>

@@ -19,10 +19,10 @@ const useStyles = makeStyles({
       transform: 'scale(1.02)',
       cursor: 'pointer',
     },
-    '& .MuiCardMedia-img': {
-      width: '100%',
-      maxWidth: '190px',
-    },
+    // '& .MuiCardMedia-img': {
+    //   width: '100%',
+    //   maxWidth: '190px',
+    // },
   },
   cardTitle: {
     fontSize: '1.15rem !important',
@@ -47,7 +47,7 @@ const useStyles = makeStyles({
     ['@media (max-width: 480px)']: {
       fontSize: '0.85rem !important',
     },
-  }
+  },
 });
 const ProductCard = ({ props }) => {
   const classes = useStyles();
@@ -57,7 +57,8 @@ const ProductCard = ({ props }) => {
       <CardMedia
         style={{ padding: '4px' }}
         component="img"
-        height="160"
+        width='100%'
+        height={160}
         image={props.img}
         alt="img products"
       />
@@ -66,6 +67,7 @@ const ProductCard = ({ props }) => {
           gutterBottom
           className={classes.cardTitle}
           component="div"
+          fontWeight={'bold'}
         >
           {props.title}
         </Typography>

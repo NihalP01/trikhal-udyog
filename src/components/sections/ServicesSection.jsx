@@ -3,8 +3,7 @@ import { Cards } from '../cards/Cards';
 import { makeStyles } from '@mui/styles';
 import { Box, Grid, Typography } from '@mui/material';
 import { productsData } from '../../data/productsData';
-import { Link } from 'react-router-dom';
-
+import { services } from '../../data/servicesData';
 
 const useClasses = makeStyles((theme) => ({
   headingText: {
@@ -36,19 +35,13 @@ const useClasses = makeStyles((theme) => ({
   },
 }));
 
-const ProductsSection = () => {
+const ServicesSection = () => {
   const classes = useClasses();
 
-  const handleClick = (id) => {
-    window.location.href = `/products/${id}`;
-  };
-
-
-
   return (
-    <div id="products">
+    <div id="services" style={{marginTop: '2rem'}}>
       <Typography className={classes.headingText}>
-        <b>Explore our products</b>
+        <b>Explore our services</b>
       </Typography>
       <Typography className={classes.typoBody}>
         This is secondary text
@@ -56,9 +49,9 @@ const ProductsSection = () => {
 
       <Box p={4}>
         <Grid container spacing={4} justifyContent="center">
-          {productsData.map((product) => (
-            <Grid item key={product.id} onClick={(e)=> handleClick(product.id)}>
-              <Cards.ProductCard props={product} />
+          {services.map((service) => (
+            <Grid item key={service.id}>
+              <Cards.ProductCard props={service} />
             </Grid>
           ))}
         </Grid>
@@ -67,4 +60,4 @@ const ProductsSection = () => {
   );
 };
 
-export default ProductsSection;
+export default ServicesSection;
