@@ -34,10 +34,6 @@ const style = makeStyles((theme) => ({
 const NavBar = () => {
   const classes = style();
 
-  const signUp = () => {
-    alert('will be added in the future');
-  };
-
   const scrollToElement = (sectionId) => {
     const htmlEle = document.getElementById(`${sectionId}`);
 

@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { headerData } from '../../data/headerData';
@@ -45,22 +45,13 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '0.8rem !important',
     },
   },
-  icons: {
-    fontSize: '1.6rem',
-    ['@media (max-width: 600px)']: {
-      fontSize: '1rem',
-    },
-  },
-  active: {
-    color: theme.palette.primary.main,
-  },
 
-  notActive: {
-    color: 'grey',
-    '&:hover': {
-      color: theme.palette.primary.main,
-    },
-  },
+  sideBarList: {
+    '&:active': {
+      color: theme.palette.secondary.main,
+    }
+  }
+  
 }));
 
 const Sidebar = () => {
@@ -138,14 +129,9 @@ const Sidebar = () => {
 
             <Divider sx={{ marginTop: 5 }} />
             {headerData.map((header, index) => (
-              <NavLink
-                to={header.link}
+              <Box
                 key={index}
-                className={(navData) =>
-                  navData.isActive
-                    ? classes.active
-                    : classes.notActive
-                }
+                className={classes.sideBarList}
                 onClick={handleToggle}
                 style={{ textDecoration: 'none' }}
               >
@@ -161,7 +147,7 @@ const Sidebar = () => {
                     {header.title}
                   </Typography>
                 </Box>
-              </NavLink>
+              </Box>
             ))}
           </List>
         </SwipeableDrawer>
