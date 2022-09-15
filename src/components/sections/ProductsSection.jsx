@@ -5,7 +5,6 @@ import { Box, Grid, Typography } from '@mui/material';
 import { productsData } from '../../data/productsData';
 import { Link } from 'react-router-dom';
 
-
 const useClasses = makeStyles((theme) => ({
   headingText: {
     fontSize: '1.8rem !important',
@@ -39,12 +38,6 @@ const useClasses = makeStyles((theme) => ({
 const ProductsSection = () => {
   const classes = useClasses();
 
-  const handleClick = (id) => {
-    window.location.href = `/products/${id}`;
-  };
-
-
-
   return (
     <div id="products">
       <Typography className={classes.headingText}>
@@ -57,8 +50,13 @@ const ProductsSection = () => {
       <Box p={4}>
         <Grid container spacing={4} justifyContent="center">
           {productsData.map((product) => (
-            <Grid item key={product.id} onClick={(e)=> handleClick(product.id)}>
-              <Cards.ProductCard props={product} />
+            <Grid item key={product.id}>
+              <Link
+                style={{ textDecoration: 'none' }}
+                to={`/products/${product.id}`}
+              >
+                <Cards.ProductCard props={product} />
+              </Link>
             </Grid>
           ))}
         </Grid>
