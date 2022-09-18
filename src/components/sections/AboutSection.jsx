@@ -1,6 +1,7 @@
 import { Box, Grid, Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
+import UseTable from '../UseTable';
 
 const useStyles = makeStyles({
   headingText: {
@@ -53,7 +54,7 @@ const AboutSection = () => {
         </Typography>
         <Grid container spacing={6}>
           <Grid item xs>
-            <Typography className={classes.typoBody} align={'left'}>
+          <Typography className={classes.typoBody} align={'left'}>
               Trikhal Udyogs Pvt Ltd is an Indian Company which used
               to carry on the business of manufacturing, trading,
               marketing, import, export, buy, sell, dealers and as

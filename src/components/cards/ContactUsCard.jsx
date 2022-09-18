@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
 
@@ -15,15 +15,15 @@ const useStyles = makeStyles({
       '& i': {
         fontSize: '2rem',
         padding: '8px',
-        ['@media (max-width: 800px)']: {
+        '@media (max-width: 800px)': {
           fontSize: '1.2rem !important',
         },
-        ['@media (max-width: 600px)']: {
+        '@media (max-width: 600px)': {
           fontSize: '1rem !important',
         },
-        ['@media (max-width: 480px)']: {
-          fontSize: '1.2rem !important'
-        }
+        '@media (max-width: 480px)': {
+          fontSize: '1.2rem !important',
+        },
       },
     },
   },
@@ -32,25 +32,25 @@ const useStyles = makeStyles({
     fontWeight: '600',
     color: '#1f755c',
     marginBottom: '1.5rem !important',
-    ['@media (max-width: 800px)']: {
+    '@media (max-width: 800px)': {
       fontSize: '1.2rem !important',
     },
-    ['@media (max-width: 600px)']: {
+    '@media (max-width: 600px)': {
       fontSize: '0.9rem !important',
     },
-    ['@media (max-width: 480px)']: {
+    '@media (max-width: 480px)': {
       fontSize: '1.1rem !important',
     },
   },
   typoBody: {
     fontSize: '1rem !important',
-    ['@media (max-width: 800px)']: {
+    '@media (max-width: 800px)': {
       fontSize: '0.9rem !important',
     },
-    ['@media (max-width: 600px)']: {
+    '@media (max-width: 600px)': {
       fontSize: '0.7rem !important',
     },
-    ['@media (max-width: 480px)']: {
+    '@media (max-width: 480px)': {
       fontSize: '0.9rem !important',
     },
   },
