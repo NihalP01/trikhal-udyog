@@ -22,27 +22,27 @@ const useStyles = makeStyles({
   },
   cardTitle: {
     fontSize: '2rem !important',
-    ['@media (max-width: 800px)']: {
+    '@media (max-width: 800px)': {
       fontSize: '1.5rem !important',
     },
-    ['@media (max-width: 600px)']: {
+    '@media (max-width: 600px)': {
       fontSize: '1.2rem !important',
       textAlign: 'center !important',
     },
-    ['@media (max-width: 480px)']: {
+    '@media (max-width: 480px)': {
       fontSize: '1rem !important',
       textAlign: 'center !important',
     },
   },
   cardDesc: {
     fontSize: '1.1rem !important',
-    ['@media (max-width: 800px)']: {
+    '@media (max-width: 800px)': {
       fontSize: '1.1rem !important',
     },
-    ['@media (max-width: 600px)']: {
+    '@media (max-width: 600px)': {
       fontSize: '0.7rem !important',
     },
-    ['@media (max-width: 480px)']: {
+    '@media (max-width: 480px)': {
       fontSize: '0.85rem !important',
     },
   },
@@ -55,17 +55,18 @@ const useStyles = makeStyles({
     justifyContent: 'center',
     cursor: 'pointer',
     marginLeft: '12rem',
-    ['@media (max-width: 800px)']: {
+    '@media (max-width: 800px)': {
       marginLeft: '5rem',
     },
-    ['@media (max-width: 600px)']: {
+    '@media (max-width: 600px)': {
       marginLeft: '2rem',
     },
-    ['@media (max-width: 480px)']: {
+    '@media (max-width: 480px)': {
       marginLeft: '2rem',
     },
   },
 });
+
 const ProductDetailsCard = ({ props }) => {
   const classes = useStyles();
   //implementing the back button

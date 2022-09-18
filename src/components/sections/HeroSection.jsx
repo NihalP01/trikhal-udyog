@@ -121,7 +121,7 @@ const HeroSection = () => {
         <Grid item xs>
           <Box mt={6} className={classes.textBox}>
             <Typography className={classes.sectionHeader}>
-              Welcome to Trikhal Udyogs Pvt. Ltd.
+              Welcome to Trikhal Udyog Pvt. Ltd.
             </Typography>
             <Typography className={classes.sectionBody}>
               Trikhal Biodegradables...

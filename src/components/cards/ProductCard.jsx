@@ -26,25 +26,25 @@ const useStyles = makeStyles({
   },
   cardTitle: {
     fontSize: '1.15rem !important',
-    ['@media (max-width: 800px)']: {
+    '@media (max-width: 800px)': {
       fontSize: '0.9rem !important',
     },
-    ['@media (max-width: 600px)']: {
+    '@media (max-width: 600px)': {
       fontSize: '0.7rem !important',
     },
-    ['@media (max-width: 480px)']: {
+    '@media (max-width: 480px)': {
       fontSize: '1rem !important',
     },
   },
   cardDesc: {
     fontSize: '1.05rem !important',
-    ['@media (max-width: 800px)']: {
+    '@media (max-width: 800px)': {
       fontSize: '1.1rem !important',
     },
-    ['@media (max-width: 600px)']: {
+    '@media (max-width: 600px)': {
       fontSize: '0.7rem !important',
     },
-    ['@media (max-width: 480px)']: {
+    '@media (max-width: 480px)': {
       fontSize: '0.85rem !important',
     },
   },

@@ -2,7 +2,6 @@ import React from 'react';
 import { Cards } from '../cards/Cards';
 import { makeStyles } from '@mui/styles';
 import { Box, Grid, Typography } from '@mui/material';
-import { productsData } from '../../data/productsData';
 import { services } from '../../data/servicesData';
 
 const useClasses = makeStyles((theme) => ({

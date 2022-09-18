@@ -4,6 +4,7 @@ export const productDetails = [
     img:`${process.env.PUBLIC_URL}/assets/images/bag.jpg`,
     title: 'Biodegradable plastic carry bag',
     desc: 'Description of the product and how it is made',
+    
   },
   {
     id: '1',
