@@ -54,7 +54,7 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 export default function UseTable({ rows }) {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 700 }} aria-label="customized table">
+      <Table aria-label="customized table">
         <TableHead>
           <TableRow>
             <StyledTableCell>Size</StyledTableCell>
