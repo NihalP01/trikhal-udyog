@@ -48,14 +48,27 @@ const NavBar = () => {
   return (
     <AppBar
       className={classes.header_main}
-      position="fixed"    
-      color="transparent" sx={{backdropFilter:"blur(30px)"}}
+      position="fixed"
+      color="transparent"
+      sx={{ backdropFilter: 'blur(30px)' }}
     >
       <Toolbar>
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/logos/logo.jpg`}
-          width="40px"
-        />
+        <Box        
+          display={'flex'}
+          style={{ justifyContent: 'center', alignItems: 'center', cursor: 'pointer' }}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/logos/logo.png`}
+            width="40px"
+          />
+          <Typography
+            ml={0.5}
+            fontSize={'1.3rem'}
+            fontWeight={'bold'}
+          >
+            Trikhal
+          </Typography>
+        </Box>
 
         <Grid
           container
