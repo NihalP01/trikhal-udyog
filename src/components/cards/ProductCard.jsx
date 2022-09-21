@@ -17,7 +17,6 @@ const useStyles = makeStyles({
     transition: 'transform 0.25s ease-in-out !important',
     '&:hover': {
       transform: 'scale(1.02)',
-      cursor: 'pointer',
     },
     // '& .MuiCardMedia-img': {
     //   width: '100%',

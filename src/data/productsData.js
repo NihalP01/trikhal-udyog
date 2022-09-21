@@ -53,7 +53,7 @@ export const productsData = [
     id: 1,
     title: 'Garbage bags',
     desc: 'This is desciption of the product',
-    img: `${process.env.PUBLIC_URL}/assets/images/leafPlate.jpg`,
+    img: `${process.env.PUBLIC_URL}/assets/images/garbage.jpg`,
     variants: [
       {
         id: 1,
@@ -103,7 +103,7 @@ export const productsData = [
     id: 2,
     title: 'Bio hazard bags',
     desc: 'This is desciption of the product',
-    img: `${process.env.PUBLIC_URL}/assets/images/more.jpg`,
+    img: `${process.env.PUBLIC_URL}/assets/images/biohazard.jpg`,
     variants: [
       {
         id: 1,
@@ -132,7 +132,7 @@ export const productsData = [
     id: 3,
     title: 'Grocery bags',
     desc: 'This is desciption of the product',
-    img: `${process.env.PUBLIC_URL}/assets/images/more.jpg`,
+    img: `${process.env.PUBLIC_URL}/assets/images/grocery.jpg`,
     variants: [
       {
         id: 1,
@@ -168,7 +168,7 @@ export const productsData = [
     id: 4,
     title: 'Pouches',
     desc: 'This is desciption of the product',
-    img: `${process.env.PUBLIC_URL}/assets/images/more.jpg`,
+    img: `${process.env.PUBLIC_URL}/assets/images/pouche.jpg`,
     variants: [
       {
         id: 1,

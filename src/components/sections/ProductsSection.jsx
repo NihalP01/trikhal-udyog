@@ -3,7 +3,6 @@ import { Cards } from '../cards/Cards';
 import { makeStyles } from '@mui/styles';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { productsData } from '../../data/productsData';
-import { Link } from 'react-router-dom';
 import UseTable from '../UseTable';
 import Popup from '../popups/Popup';
 
@@ -50,7 +49,7 @@ const ProductsSection = () => {
   };
 
   return (
-    <div id="products">
+    <div id="products" style={{ padding: '12px' }}>
       <Typography className={classes.headingText}>
         <b>Explore our products</b>
       </Typography>
@@ -70,15 +69,10 @@ const ProductsSection = () => {
               style={{ display: 'flex', justifyContent: 'center' }}
             >
               <Grid item>
-                <Link
-                  style={{ textDecoration: 'none' }}
-                  to={`/products/${product.id}`}
-                >
-                  <Cards.ProductCard props={product} />
-                </Link>
+                <Cards.ProductCard props={product} />
               </Grid>
               {product.variants && (
-                <Grid item xs={12} md={6} p={2}>
+                <Grid item xs={12} md={6}>
                   <UseTable rows={product.variants} />
                   <Box
                     style={{
@@ -86,23 +80,11 @@ const ProductsSection = () => {
                       flexDirection: 'column',
                       alignItems: 'center',
                     }}
-                    mt={2}
+                    mt={4}
                   >
-                    <Box
-                      mt={2}
-                      style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                      }}
-                      width={'220px'}
-                    >
-                      <Button
-                        variant="contained"
-                        onClick={handleClick}
-                      >
-                        Order now
-                      </Button>
-                    </Box>
+                    <Button variant="contained" onClick={handleClick}>
+                      Order now
+                    </Button>
                   </Box>
                 </Grid>
               )}
@@ -116,8 +98,9 @@ const ProductsSection = () => {
           content={
             <Box>
               <Typography gutterBottom variant="body2">
-                You can call us on these numbers below to place an
-                order and we will get back to you as soon as possible.
+                You can call or Whatsapp us on these numbers below to
+                place an order and we will get back to you as soon as
+                possible.
               </Typography>
               <Typography mt={2}>+91 9163922754</Typography>
               <Typography>+91 7872223506</Typography>

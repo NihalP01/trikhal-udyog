@@ -41,7 +41,7 @@ const SecondaryNav = () => {
     >
       <Toolbar>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/logos/logo.jpg`}
+          src={`${process.env.PUBLIC_URL}/assets/logos/logo.png`}
           width="40px"
         />
 

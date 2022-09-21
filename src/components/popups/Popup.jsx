@@ -17,16 +17,15 @@ const Popup = ({ title, openPopUp, content, handleClose }) => {
       <DialogTitle>
         <div
           style={{
-            display: 'flex',          
+            display: 'flex',
             justifyContent: 'space-between',
             height: '20px',
-
           }}
         >
           <Typography component="div" style={{ fontSize: '1rem' }}>
             {title}
           </Typography>
-          <IconButton onClick={handleClose}>  
+          <IconButton onClick={handleClose}>
             <CloseIcon />
           </IconButton>
         </div>
@@ -35,12 +34,6 @@ const Popup = ({ title, openPopUp, content, handleClose }) => {
         <DialogContentText>{content}</DialogContentText>
       </DialogContent>
       <DialogActions>
-        <Button
-          style={{ textTransform: 'none' }}
-          onClick={handleClose}
-        >
-          Cancel
-        </Button>
         <Button
           style={{ textTransform: 'none' }}
           onClick={handleClose}
